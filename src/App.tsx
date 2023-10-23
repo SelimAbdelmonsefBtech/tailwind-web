@@ -1,10 +1,4 @@
 import { useEffect, useState } from 'react';
-import styled from 'styled-components';
-
-export const StyledContent = styled.h1<{ theme: string }>(({ theme }) => ({
-  color:
-    theme === 'light' ? 'text-content-primary' : 'text-content-primary-inverse',
-}));
 
 export const App = () => {
   const [theme, setTheme] = useState<string>('light');
@@ -25,15 +19,7 @@ export const App = () => {
   return (
     <div className="h-screen bg-white dark:bg-black justify-center items-center text-center">
       <div>
-        <h1
-          className={`${
-            theme === 'light'
-              ? 'text-content-primary'
-              : 'text-content-primary-inverse'
-          }`}
-        >
-          TEXT
-        </h1>
+        <h1 className="dark:text-content-primary">TEXT</h1>
       </div>
 
       <div>

@@ -27,7 +27,7 @@ function extractData(json, result = {}) {
 const githubApiUrl =
   'https://raw.githubusercontent.com/SelimAbdelmonsefBtech/tailwindconfig/main/outputs_fiber.json';
 
-const accessToken = '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'; // access token
+const accessToken = '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'; // access token
 
 // Fetch the JSON data from GitHub
 fetch(githubApiUrl, {
