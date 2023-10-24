@@ -15,11 +15,15 @@ export const App = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
-  console.log({ theme });
   return (
     <div className="h-screen bg-white dark:bg-black justify-center items-center text-center">
       <div>
-        <h1 className="dark:text-content-primary">TEXT</h1>
+        <h1
+          // className={`dark:${tailwindStyles.colors['content-primary-inverse']}`}
+          className="text-content-danger-primary"
+        >
+          TEXT
+        </h1>
       </div>
 
       <div>
